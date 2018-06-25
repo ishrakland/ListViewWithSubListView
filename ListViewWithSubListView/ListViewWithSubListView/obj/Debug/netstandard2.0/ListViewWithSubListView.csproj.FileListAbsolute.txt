@@ -1,0 +1,11 @@
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\bin\Debug\netstandard2.0\ListViewWithSubListView.deps.json
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\bin\Debug\netstandard2.0\ListViewWithSubListView.dll
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.csproj.CoreCompileInputs.cache
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.App.xaml.g.cs
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.AssemblyInfoInputs.cache
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.AssemblyInfo.cs
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.Views.Hotels.xaml.g.cs
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.dll
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.pdb
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\bin\Debug\netstandard2.0\ListViewWithSubListView.pdb
+C:\GitHub\ListViewWithSubListView\ListViewWithSubListView\ListViewWithSubListView\obj\Debug\netstandard2.0\ListViewWithSubListView.csprojAssemblyReference.cache

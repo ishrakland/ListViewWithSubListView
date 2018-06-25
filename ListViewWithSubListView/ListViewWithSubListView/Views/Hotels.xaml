@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="currentPage"
+             xmlns:local="clr-namespace:ListViewWithSubListView.Views"
+             x:Class="ListViewWithSubListView.Views.Hotels">
+    <ContentPage.Content>
+        <Grid >
+          
+            <StackLayout x:Name="hotelStack" Padding="1,0,1,0" >
+                <ListView
+                    x:Name="HotelsList"
+                    BackgroundColor="White"
+                    IsGroupingEnabled="True"
+                    IsPullToRefreshEnabled="true"
+                    IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                    ItemsSource="{Binding Items}"
+                    RefreshCommand="{Binding LoadHotelsCommand}"
+                    >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal"  VerticalOptions="Center">
+                                        <Label
+                                            VerticalOptions="Center"
+                                            FontAttributes="Bold"
+                                            FontSize="Medium"
+                                            Text="{Binding .RoomName}"
+                                            TextColor="Black"
+                                            VerticalTextAlignment="Center" />                                  
+                                </StackLayout>                                   
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <ListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                               <Grid >
+                                   <Label
+                                                FontAttributes="Bold"
+                                                FontSize="Small"
+                                                Text="{Binding Name}"
+                                                TextColor="Gray"
+                                                VerticalTextAlignment="Center" />
+                                    <Image x:Name="ImgA" Source="{Binding StateIcon}"  Margin="0,0,5,0" HeightRequest="20" WidthRequest="20" HorizontalOptions="End"/>
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Source={x:Reference currentPage}, Path=BindingContext.RefreshItemsCommand}"  NumberOfTapsRequired="1" CommandParameter="{Binding .}"/>
+                                    </Grid.GestureRecognizers>
+                                </Grid>                               
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.GroupHeaderTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>   
+</ContentPage>

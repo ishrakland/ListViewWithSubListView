@@ -1,3 +1,5 @@
+using ListViewWithSubListView.ViewModels;
+using ListViewWithSubListView.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +13,7 @@ namespace ListViewWithSubListView
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new Hotels(new HotelsGroupViewModel());
 		}
 
 		protected override void OnStart ()

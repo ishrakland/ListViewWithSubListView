@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Plugin.Toast" Version="2.0.0" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.0" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.527436" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Hotels.xaml.cs">
+      <DependentUpon>Hotels.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
