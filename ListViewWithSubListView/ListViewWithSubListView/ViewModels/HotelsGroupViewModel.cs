@@ -40,7 +40,6 @@ namespace ListViewWithSubListView.ViewModels
             {
                 // click twice on the same item will hide it
                 item.Expanded = !item.Expanded;
-                //  UpdateHotels(item);
             }
             else
             {
@@ -48,11 +47,9 @@ namespace ListViewWithSubListView.ViewModels
                 {
                     // hide previous selected item
                     _oldHotel.Expanded = false;
-                    //  UpdateHotels(_oldHotel);
                 }
                 // show selected item
                 item.Expanded = true;
-                // UpdateHotels(item);
             }
 
             _oldHotel = item;
