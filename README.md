@@ -9,4 +9,4 @@ Tested on Android,  iOS and UWP
 
 #ListView #Expandable #Xamarin #Forms #SubList
 
-This code is Free . But if you find it usuful Star it and Thank you so much in advance.
+This code is Free . But if you find it usuful Star it and Thank you in advance.
